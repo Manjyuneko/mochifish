@@ -274,11 +274,11 @@ function handleMouseMove(event) {
 Shuttle = function shuttle() {
 	this.mesh = new THREE.Object3D();
 	const mtlLoader = new MTLLoader();
-	mtlLoader.load( '/models/shuttle.mtl', ( mtl ) => {
+	mtlLoader.load( '/mochifish/shuttle.mtl', ( mtl ) => {
 		mtl.preload();
 		const objLoader = new OBJLoader();
 		objLoader.setMaterials( mtl );
-		objLoader.load( '/models/shuttle.obj', ( root ) => {
+		objLoader.load( '/mochifish/shuttle.obj', ( root ) => {
 			root.applyMatrix4(new THREE.Matrix4().makeRotationY(-Math.PI/2));
 			//root.position.set(-100,100,-50);
 			root.castShadow = true;
@@ -293,11 +293,11 @@ Shuttle = function shuttle() {
 Cat = function cat(){
 	this.mesh = new THREE.Object3D();
 	const mtlLoader = new MTLLoader();
-	mtlLoader.load( '/models/cat.mtl', ( mtl ) => {
+	mtlLoader.load( '/mochifish/cat.mtl', ( mtl ) => {
 		mtl.preload();
 		const objLoader = new OBJLoader();
 		objLoader.setMaterials( mtl );
-		objLoader.load( '/models/cat.obj', ( root ) => {
+		objLoader.load( '/mochifish/cat.obj', ( root ) => {
 			root.applyMatrix4(new THREE.Matrix4().makeRotationY(-Math.PI/1.65));
 			root.castShadow = true;
 			root.receiveShadow = true;
@@ -311,7 +311,7 @@ Cat = function cat(){
 Helmet = function helmet(){
 	this.mesh = new THREE.Object3D();
 		const objLoader = new OBJLoader();
-		objLoader.load( '/models/cat.obj', ( root ) => {
+		objLoader.load( '/mochifish/cat.obj', ( root ) => {
 			root.applyMatrix4(new THREE.Matrix4().makeRotationY(-Math.PI/1.65));
 			root.castShadow = true;
 			root.receiveShadow = true;
@@ -347,7 +347,7 @@ function createmochi(){
 Star = function(){
 	this.mesh = new THREE.Object3D();
 		const objLoader = new OBJLoader();
-		objLoader.load( '/models/star.obj', ( root ) => {
+		objLoader.load( '/mochifish/star.obj', ( root ) => {
 			root.applyMatrix4(new THREE.Matrix4().makeRotationY(-Math.PI/2));
 			var nBlocs = 5+Math.floor(Math.random()*3);
 			for (var i=0; i<nBlocs; i++ ){
