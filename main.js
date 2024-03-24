@@ -67,7 +67,7 @@ var e = getRandomInt(50, 150);
 Fish = function(){
 	this.mesh = new THREE.Object3D();
 		const objLoader = new OBJLoader();
-		objLoader.load( '/models/fish.obj', ( root ) => {
+		objLoader.load( '/mochifish/fish.obj', ( root ) => {
 			root.applyMatrix4(new THREE.Matrix4().makeRotationY(-Math.PI/2));
 			root.scale.setScalar(.5);
 			this.mesh.add(root);
