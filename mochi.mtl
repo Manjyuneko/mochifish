@@ -1,0 +1,22 @@
+# Blender 3.4.1 MTL File: 'cat2.blend'
+# www.blender.org
+
+newmtl LightBlue
+Ns 393.471069
+Ka 1.000000 1.000000 1.000000
+Ks 0.700000 0.700000 0.700000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd spaceshuttle._UDIM_.png
+
+newmtl greycat
+Ns 82.599655
+Ka 1.000000 1.000000 1.000000
+Ks 0.374016 0.374016 0.374016
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd mochineko.png
