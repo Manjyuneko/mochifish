@@ -1,0 +1,56 @@
+html, body {
+	margin: 0;
+	height: 100%;
+	font-family: "Lucida Console", "Courier New", monospace;
+	background:#BAC0E1;
+	text-align: center;
+}
+
+h1{
+	color: #F3D1F5;
+	font-size: 40px;
+}
+
+#scoreboard {
+	color: #F3D1F5;
+	font-size: 30px;
+}
+
+#c {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	pointer-events: none;
+}
+
+#world {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: linear-gradient(#BAC0E1, #F2E9BD);
+}
+
+#message {
+	z-index: 100;
+	color: white;
+    font-size: 120px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#replay {
+	z-index: 100;
+	color: white;
+    font-size: 30px;
+	position: fixed;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
